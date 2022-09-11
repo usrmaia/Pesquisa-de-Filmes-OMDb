@@ -1,9 +1,14 @@
-h1 h2 label .button{
+h1, h2, h3, h4, p, label, .button{
   font-family: "Poppins";
+  color: rgba(255, 255, 255, 0.812);
 }
 
 h2 {
   font-size: 25px;
+}
+
+input {
+  color: black;
 }
 
 label{
