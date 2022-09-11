@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/nolan/64/movie.png">
+    <title>Pesquisa de Filmes</title>
+    <link rel="stylesheet" type="text/css" href="./reset.css" media="screen"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="./fonts.css" media="screen"/>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <h2>Pesquisar Filme</h2>
+    </header>
+
+    <form name="Pesquisar Filme" id="form" class="form">
+        <div class="form_control">
+            <label for="ftitle">Título:</label><br>
+            <input 
+                type="text" 
+                id="ftitle" 
+                name="ftitle" 
+                placeholder="Digite o título..."
+            >
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Informe um nome!</small>
+        </div>
+        <br>
+        
+        <div class="form_control">
+            <label for="fyear">Ano de Lançamento:</label><br>
+            <input 
+                type="number" 
+                min="1890" max="2022" 
+                step="1" 
+                value="" 
+                id="fyear" 
+                name="fyear"
+                placeholder="Digite o ano de lançamento..."
+            >
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Informe um ano!</small>  
+        </div>
+        <br>
+
+        <input 
+            type="submit" 
+            value="Enviar"
+            class="button"
+        >
+    </form>
+    </div>
+
+    <div class="informations">
+        <div id="main-information">
+            <div id="poster"></div>
+            <div id="details"></div>
+        </div>
+        <div id="plot"></div>
+    </div>
+
+<script src="https://kit.fontawesome.com/71f85d208d.js" crossorigin="anonymous"></script>
+<script type="module" src="./script.js"></script>
+</body>
+</html>
