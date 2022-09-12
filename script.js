@@ -50,7 +50,7 @@ async function SearchMovie(){
   ShowInHTML(filmRequisition)
 }
 
-function ShowInHTML(filmRequisition){
+async function ShowInHTML(filmRequisition){
   if(filmRequisition.response){
     poster.innerHTML = `
       <img src=${filmRequisition.poster} id="poster">
@@ -70,7 +70,7 @@ function ShowInHTML(filmRequisition){
     `
     plot.innerHTML = `
     <h3><strong>Sinops: </strong></h3>
-      <p>${filmRequisition.plot}</p>
+      <p>${await translate(filmRequisition.plot)}...</p>
     `
   } else {
     details.innerHTML = `<h2>${filmRequisition.error}<h2>`
